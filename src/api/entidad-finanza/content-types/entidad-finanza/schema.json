@@ -4,7 +4,8 @@
   "info": {
     "singularName": "entidad-finanza",
     "pluralName": "entidad-finanzas",
-    "displayName": "Entidad-finanza"
+    "displayName": "Entidad-finanza",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -25,11 +26,17 @@
       "required": true
     },
     "profile_picture": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "money": {
+      "type": "decimal",
+      "min": 0,
+      "required": false
     }
   }
 }
