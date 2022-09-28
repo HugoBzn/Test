@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "consumidores",
+  "info": {
+    "singularName": "consumidor",
+    "pluralName": "consumidores",
+    "displayName": "Consumidor",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "password": {
+      "type": "password",
+      "required": true,
+      "private": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "profile_picture": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

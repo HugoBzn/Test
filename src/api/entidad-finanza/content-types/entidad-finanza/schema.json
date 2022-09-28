@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "entidad_finanzas",
+  "info": {
+    "singularName": "entidad-finanza",
+    "pluralName": "entidad-finanzas",
+    "displayName": "Entidad-finanza"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "password": {
+      "type": "password",
+      "required": true,
+      "private": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "profile_picture": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

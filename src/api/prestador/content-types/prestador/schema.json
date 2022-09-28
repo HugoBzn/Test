@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prestadores",
+  "info": {
+    "singularName": "prestador",
+    "pluralName": "prestadores",
+    "displayName": "Prestador",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "password": {
+      "type": "password",
+      "private": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "profile_picture": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}
